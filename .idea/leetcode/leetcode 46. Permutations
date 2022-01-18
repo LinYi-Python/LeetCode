@@ -1,6 +1,7 @@
 //https://leetcode-cn.com/problems/permutations/
 
 //1.backtrack search
+import java.util.*;
 
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
