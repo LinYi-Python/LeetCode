@@ -9,7 +9,7 @@ public class KthSmallestElementInaSortedMatrix378 {
 }
 
 //binanry search
-class Solution1 {
+class KthSmallestElementInaSortedMatrix378A {
     public int kthSmallest(int[][] matrix, int k) {
         int n = matrix.length;
         int left = matrix[0][0];
@@ -45,7 +45,7 @@ class Solution1 {
 
 
 
-class Solution2 {
+class KthSmallestElementInaSortedMatrix378B {
     public int kthSmallest(int[][] matrix, int k) {
         //MinHeap
         PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>(){

@@ -14,7 +14,7 @@ public class MergeKSortedLists23 {
           this.next = next; }
   }
 
-class Solution {
+class MergeKSortedLists23A {
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode ans = null;
         for(int i = 0; i < lists.length; i++){

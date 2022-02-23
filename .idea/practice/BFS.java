@@ -90,7 +90,7 @@ import java.util.Queue;
 
 
 // * Definition for a binary tree node.
- public class TreeNode {
+ class TreeNode {
     int val;
      TreeNode left;
      TreeNode right;
@@ -102,7 +102,7 @@ import java.util.Queue;
          this.right = right;
      }}
 // */
-class Solution {
+class bfs1 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
@@ -133,7 +133,7 @@ class Solution {
     }
 }
 
-public class MainClass {
+class MainClass {
     public static TreeNode stringToTreeNode(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);

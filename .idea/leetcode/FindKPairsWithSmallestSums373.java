@@ -8,7 +8,7 @@ public class FindKPairsWithSmallestSums373 {
 
 
 //不对，复杂度太高，没有用到sorted这个条件
-class Solution {
+class FindKPairsWithSmallestSums373A {
     //Java Priority Queue Solution
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -44,7 +44,7 @@ class Solution {
 
 
 //minheap
-class Solution2 {
+class FindKPairsWithSmallestSums373B {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<>(k, (o1, o2)->{
             return nums1[o1[0]] + nums2[o1[1]] - nums1[o2[0]] - nums2[o2[1]];
@@ -72,7 +72,7 @@ class Solution2 {
 
 
 //binary search
-class Solution3 {
+class FindKPairsWithSmallestSums373C {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         int m = nums1.length;
         int n = nums2.length;
@@ -152,7 +152,7 @@ class Solution3 {
 //5th smallest s is 3 + 8 = 11
 
 
-class Solution4 {
+class FindKPairsWithSmallestSums373D {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         //minHeap
         List<List<Integer>> result = new ArrayList<>();
@@ -187,7 +187,7 @@ class Solution4 {
     }
 
     public static void main(String[] args) {
-        Solution4 test = new Solution4();
+        FindKPairsWithSmallestSums373D test = new FindKPairsWithSmallestSums373D();
         int[] nums1 = new int[]{1, 7, 11};
         int[] nums2 = new int[]{2, 4 ,6};
     }
